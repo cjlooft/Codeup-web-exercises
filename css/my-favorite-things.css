@@ -1,0 +1,31 @@
+* {
+    background-color: cornflowerblue;
+}
+h1 {
+    font-family: Chalkboard;
+    color: fuchsia;
+    text-decoration: underline;
+    background-color: darkgreen;
+}
+ol {
+    font-family:Baskerville;
+    list-style-type:upper-roman;
+
+    color: chartreuse;
+
+}
+
+h2 {
+        color: blueviolet;
+    background-color: white;
+
+    }
+
+em {
+    font-weight: bolder;
+    color: orange;
+}
+
+.favorites {
+    background-color: black;
+}
