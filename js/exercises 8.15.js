@@ -18,7 +18,7 @@ function fizzBuzz(num) {
     }
 }
 
-fizzBuzz(50)
+fizzBuzz(50);
 
 // new exercise
 function fizzBuzz(number) {
@@ -35,20 +35,25 @@ function fizzBuzz(number) {
         }
     }
 }
-fizzBuzz(50)
+fizzBuzz(50);
 
 // new array bugs
 
 
 var bugs = ["roach", "dragonfly", "spider", "mosquito", "ladybug", "earthworm", "wasp"];
 
-    bugs.push("ant") //adds
-     bugs.pop( ) //takses aways from the end
 
+
+
+bugs; unshift();  //adds to the front
 bugs.shift( );  //takes off the first item
-bugs unshift();  //adds to the front
 
-bugs[3]  //this will return "spider
+
+bugs.push("ant"); //adds
+bugs.pop( ); //takses aways from the end
+
+
+bugs[3];  //this will return "spider
 
 
 bugs.indexof("roach");
@@ -57,7 +62,7 @@ bugs.indexof("roach");
 
     bugs.sort();
 
-    bugs.reverse()
+    bugs.reverse();
 
 
 bugs.indexOf("mosquito");
@@ -78,7 +83,7 @@ var energy = fruits.join(" and ");
 
 var str = "How are you doing today?";
 str.split(" ", 3);
-(3) ["How", "are", "you"]
+(3) ["How", "are", "you"];
 
 
 
