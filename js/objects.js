@@ -19,29 +19,36 @@
 
     console.log(person.sayHello());
 
-    // HEB problem
+
     var shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
 
-    for (var i = 0; i < shoppers[i].length; i++) {
+    console.log(shoppers);
 
 
-        var discount = shoppers[i].amount * .12;
-        var newTotal = shoppers[i].amount - discount;
+    var discount;
+    var newTotal;
 
+    for (var i = 0; i < shoppers.length; i++) {
+
+        console.log("i");
+
+
+        discount = shoppers[i].amount * .12;
+        newTotal = shoppers[i].amount - discount;
 
 
         if (shoppers[i].amount >= 200) {
-            console.log (shoppers[i].name + ", you get a 12% discount. Your discount is $" + discount + " and your total is" + newTotal);
+            console.log(shoppers[i].name + ", you get a 12% discount. Your discount is $" + discount + " and your total is $" + newTotal + ".");
         } else {
 
             console.log(shoppers[i].name + ", your total is $" + shoppers[i].amount);
+
         }
     }
-
 
 
     /*
@@ -75,25 +82,67 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    /**
-     * TODO:
-     *  var books []{
 
+    function catalogOfBooks(book) {
+        books.title;
+    }
+
+
+    var books = [];
+
+
+    var book1 = {
+        title: "The Wizard of Oz",
+        author: {
+            firstName: "Frank L.",
+            lastName: "Baum",
         }
+    }
 
-     var book1 = {
-         title:
-          author:
-                firstName:
-                lastName:
+    var book2 = {
+        title: "Charlotte's Web",
+        author: {
+            firstName: "E. B.",
+            lastName: "White",
+        }
+    }
+
+
+    var book3 = {
+        title: "Anne of Green Gable",
+        author: {
+            firstName: "L. M.",
+            lastName: "Montgomery",
+        }
+    }
+
+    var book4 = {
+        title: "To Kill A Mockingbird",
+        author: {
+            firstName: "Harper",
+            lastName: "Lee",
+        }
+    }
+
+    books.push(book1, book2, book3, book4);
+    
+
+// this is where I left off
 
 
 
-      var book2 = {
-          title:
-           author:
-                  firstName:
-                  lastName:
+    console.log(books);
+
+    for (var x = 0; x < books.length; x++) {
+        if (books[x]) {
+          console.log (books[x].title, books[x].author.firstName.books[x].author.lastName);
+        }
+    }
+
+
+
+
+    /**
      * Loop through the books array and output the following information about
      * each book:
      * - the book number (use the index of the book in the array)
