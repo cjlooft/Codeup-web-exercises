@@ -32,9 +32,11 @@
     var discount;
     var newTotal;
 
+    //      shoppers.forEach(function(shopper)
+
     for (var i = 0; i < shoppers.length; i++) {
 
-        console.log("i");
+
 
 
         discount = shoppers[i].amount * .12;
@@ -83,9 +85,6 @@
      */
 
 
-    function catalogOfBooks(book) {
-        books.title;
-    }
 
 
     var books = [];
@@ -123,23 +122,29 @@
             lastName: "Lee",
         }
     }
-
-    books.push(book1, book2, book3, book4);
-
-
-// this is where I left off
-
-
-
-    console.log(books);
-
-    for (var x = 0; x < books.length; x++) {
-        if (books[x]) {
-          console.log (books[x].title, books[x].author.firstName.books[x].author.lastName);
+    var book5 = {
+        title: "The Martian",
+        author: {
+            firstName: "Andy",
+            lastName:  "Weir",
         }
     }
 
+    books.push(book1, book2, book3, book4, book5);
 
+
+var bookListing = function(book, bookNum) {
+
+    console.log("Book #" + bookNum);
+    console.log("Title:" + book.title);
+    console.log("Author: " + book.author.firstName + book.author.lastName);
+
+}
+
+        books.forEach(function (book, id)
+    {
+
+        bookListing(book, id + 1);
 
 
     /**
@@ -165,7 +170,25 @@
      *      ---
      *      ...
      */
+var createBook = function (title, author) {
+    var book = {}
+    book.title = title;
+    if (typeof author ==== "string") {
+        var names = suthor.split(" ");
+        var authObj = {
+            firstname: name[0],
+            lastNmae; names[1]
+        }
+        }
+        else if (typeof author === "object") {
+        book.author = author;
+        }
 
+    return book;
+
+    }
+
+    console.log(createBook("The Salmon of Doubt", {firstName: "Douglas", lastName: "Adams"}));
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
