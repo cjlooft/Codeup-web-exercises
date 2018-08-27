@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Exercise</title>
+
+    <style>
+        body {background-color: yellowgreen;}
+        h1   {color: saddlebrown;}
+        p    {background-color:white; color:rebeccapurple;}
+        .quote {background-color:white; padding: 6px; border: 6px solid black}
+
+    </style>
+</head>
+
+<body>
+
+
+<a><img src="Image/NewtotheNeighborhood.jpeg"  width="500"/></a>
+
+<H1>Won't You Be My Neighbor?</H1>
+
+
+
+<p class="quote" id="important" >If you could only sense how important you are to the lives of those you meet; how important you can be to
+    the people you may never even dream of.</p>
+<br>
+
+    <blockquote class="quote" id="leaving">   There is something of yourself that you leave at every meeting with another person. ~Mr. Rogers
+</blockquote>
+
+
+<ul>
+
+
+    <li class="codeup">It's a beautiful day in the neighborhood</li>
+    <li>A beautiful day for a neighbor</li>
+    <li>Could you be mine?</li>
+    <li>Would you be mine?</li>
+
+
+
+    <li class="codeup">I have always wanted to have a neighbor just like you. </li>
+    <li class="codeup">I've always wanted to live in a neighborhood with you.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+    (function() {
+        "use strict";
+        $('h1').click(function(){
+            $(this).css('background-color', 'yellow');
+
+        });
+        $('p').dblclick(function (){
+            $('p').css('font-size', '18px');
+        });
+        $('li').hover(function(){
+            $('li').css('color', 'red');
+        }, function(){
+            $('li').css('color', 'black');
+        });
+
+    })();
+</script>
+
+
+<!---
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
