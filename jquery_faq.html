@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Sequoia National Park</title>
+
+
+
+    <style>
+        .invisible {
+            display: none;
+        }
+        .highlighted {
+            background-color: yellow;
+
+        }
+    
+    </style>
+    <script src="js/jquery-2.2.4.js"></script>
+
+
+</head>
+<body>
+
+<h1> 10 facts about Sequoia National Park</h1>
+
+<dl>
+<dt>Established date:</dt>
+    <dd >It was established on September 25, 1890</dd>
+
+    <dt>Location</dt>
+    <dd >It is located in the Sierra Nevada, a mountain range located between the Central Valley of California and
+        the Great Basin.
+    </dd>
+    <dd >The park is south of and contiguous with Kings Canyon National Park</dd>
+    <dt>Area/Size</dt>
+    <dd >The park spans 404,064 acres</dd>
+    <dt>Famous attractions</dt>
+
+    <dd >The park is famous for its giant sequoia trees and features the General Sherman tree, the largest tree on Earth.</dd>
+    <dd >Located in the center of the park is Moro Rock which is a granite dome <img src="Image/Moro Rock.jpg"  width="50">Moro Rock
+         </dd>
+    <dd >Animals that inhabit this park include coyote, badger, black bear, bighorn sheep, deer, fox,
+        cougar, beaver, muskrat, and wolverine.</dd>
+
+    <dt>Visitiors can engage in various activities including hiking, camping, fishing, and backpacking</dt>
+
+
+    <dt>Click   <a href=" https://www.nps.gov/seki/index.htm ">here </a>to go to the official website of the Sequoria National Park
+    </dt>
+</dl>
+<script src="js/jquery-2.2.4.js"></script>
+
+<script>
+
+    "use strict";
+
+
+        $("dd").click(function(event) {
+        event.preventDefault();
+            $(this).toggleClass("invisible");
+        });
+
+        $("dt").click(function() {
+            $(this).toggleClass("highlighted");
+        });
+
+
+
+</script>
+
+
+</body>
+</html>
+
