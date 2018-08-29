@@ -58,7 +58,7 @@
 
 <hr>
 <h3>Yosemite National Park</h3>
-<ul>
+<ul class="Parks">
     <li>Pacific Crest Trail</li>
     <li>El Capitan</li>
     <li>Half Dome</li>
@@ -69,7 +69,7 @@
 
 
 <h3> Kings Canyon National Park</h3>
-<ul>
+<ul class="Parks">
 
     <li>The General Grant Tree</li>
     <li>Hume Lake</li>
@@ -79,13 +79,13 @@
 
 
 <h3>Redwood National Park </h3>
-
+<ul class="Parks">
     <li>The General Sherman Tree</li>
     <li>Fern Canyon</li>
     <li>Coastal Drive</li>
     <li>Battery Point Lighthouse</li>
 
-
+</ul>
 <button type="button" class="yellow-highlight">Highlight!</button>
 
 
@@ -113,7 +113,19 @@
 
 
     $(".yellow-highlight").click(function() {
-        $("li").addClass("highlighted");
+        $('ul').children.last().css('background-color', '#FF0');
+        });
+
+
+
+        $('h3').click(function() {
+            $(this).next().css('font-weight', 'bold');
+        });
+
+
+
+    $('li').click(function() {
+        $(this).parent().children().first().css('background-color' , "#006BFF");
     });
 
 
@@ -122,4 +134,3 @@
 
 </body>
 </html>
-
