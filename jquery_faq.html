@@ -112,9 +112,17 @@
     });
 
 
-    $(".yellow-highlight").click(function() {
-        $(".lastinlist").css('background-color', '#FF0');
-        });
+   // $(".yellow-highlight").click(function() {
+     //   $(".lastinlist").css('background-color', '#FF0');
+     //   });
+
+
+    $(".yellow-highlight").click(function(event) {
+    $("ul").each(function() {
+        $(this).children().last().toggleClass("highlighted");
+    });
+    });
+
 
 
 
@@ -125,8 +133,9 @@
 
 
     $('li').click(function() {
-        $(this).parent().children().first().css('background-color' , "#006BFF");
+        $(this).parent().children().first().css('color' , "#006BFF");
     });
+
 
 
 </script>
