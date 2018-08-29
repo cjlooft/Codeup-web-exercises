@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Konami Code</title>
+
 </head>
 
 
@@ -16,15 +17,14 @@
 
 <p style= "font-size: 36px ;  color: navy ; background-color: navajowhite ;  width: 6em">
     Type the Konomi Code.
-</p>
+
+
 <audio id="">
     <source src="image/Duck-quack-sound.mp3" type="audio/mp3">
 </audio>
 
 <script src="js/jquery-2.2.4.js"></script>
 <script>
-
-
     $(document).keyup(function(event){
         console.log(event.keyCode);
     });
@@ -33,22 +33,18 @@
         keyCodes.push( e.keyCode );
         if (keyCodes.toString().indexOf(konamiString) >= 0){
             $(document).unbind('keydown',arguments.callee);
-
-           alert("Talk to the duck!");
-           
-
+            alert("Talk to the duck!");
+            document.body.style.backgroundImage = "url('image/rubber-ducky2.png')";
             var audio = new Audio('image/Duck-quack-sound.mp3');
             audio.play();
-
-
-
-
         }
     });
+
+
+
 </script>
 </body>
 </html>
-
 
 
 
