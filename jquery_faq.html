@@ -54,7 +54,40 @@
     </dt>
 </dl>
 
-<button type="button">Show me!</button>
+<button type="button" class="show-me">Show me!</button>
+
+<hr>
+<h3>Yosemite National Park</h3>
+<ul>
+    <li>Pacific Crest Trail</li>
+    <li>El Capitan</li>
+    <li>Half Dome</li>
+    <li>Mariposa Grove</li>
+    <li>Tuolumne Meadows</li>
+    
+</ul>
+
+
+<h3> Kings Canyon National Park</h3>
+<ul>
+
+    <li>The General Grant Tree</li>
+    <li>Hume Lake</li>
+    <li>John Muir Trail</li>
+    <li>Roaring River Falls</li>
+</ul>
+
+
+<h3>Redwood National Park </h3>
+
+    <li>The General Sherman Tree</li>
+    <li>Fern Canyon</li>
+    <li>Coastal Drive</li>
+    <li>Battery Point Lighthouse</li>
+
+
+<button type="button" class="yellow-highlight">Highlight!</button>
+
 
 <script src="js/jquery-2.2.4.js"></script>
 
@@ -74,12 +107,14 @@
 
 
 
-    $("button").click(function() {
+    $(".show-me").click(function() {
         $('dd').removeClass("invisible");
     });
 
 
-
+    $(".yellow-highlight").click(function() {
+        $("li").addClass("highlighted");
+    });
 
 
 </script>
