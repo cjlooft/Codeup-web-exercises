@@ -15,7 +15,7 @@
             background-color: yellow;
 
         }
-    
+
     </style>
     <script src="js/jquery-2.2.4.js"></script>
 
@@ -23,8 +23,10 @@
 </head>
 <body>
 
-<h1> 10 facts about Sequoia National Park</h1>
 
+
+<img src="Image/General-Sherman-Tree .jpg" width="400"/>
+<h1> 10 facts about Sequoia National Park</h1>
 <dl>
 <dt>Established date:</dt>
     <dd >It was established on September 25, 1890</dd>
@@ -39,7 +41,8 @@
     <dt>Famous attractions</dt>
 
     <dd >The park is famous for its giant sequoia trees and features the General Sherman tree, the largest tree on Earth.</dd>
-    <dd >Located in the center of the park is Moro Rock which is a granite dome <img src="Image/Moro Rock.jpg"  width="50">Moro Rock
+    <dd >Located in the center of the park is Moro Rock which is a granite dome <br>
+        <img src="Image/Moro Rock.jpg"  width="250"> Moro Rock
          </dd>
     <dd >Animals that inhabit this park include coyote, badger, black bear, bighorn sheep, deer, fox,
         cougar, beaver, muskrat, and wolverine.</dd>
@@ -50,6 +53,9 @@
     <dt>Click   <a href=" https://www.nps.gov/seki/index.htm ">here </a>to go to the official website of the Sequoria National Park
     </dt>
 </dl>
+
+<button type="button">Invisible</button>
+
 <script src="js/jquery-2.2.4.js"></script>
 
 <script>
@@ -65,6 +71,14 @@
         $("dt").click(function() {
             $(this).toggleClass("highlighted");
         });
+
+
+
+    $("button").click(function() {
+        $('dd').removeClass("invisible");
+    });
+
+
 
 
 
