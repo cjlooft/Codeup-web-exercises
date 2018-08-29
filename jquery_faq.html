@@ -63,7 +63,7 @@
     <li>El Capitan</li>
     <li>Half Dome</li>
     <li>Mariposa Grove</li>
-    <li>Tuolumne Meadows</li>
+    <li class="lastinlist">Tuolumne Meadows</li>
     
 </ul>
 
@@ -74,7 +74,7 @@
     <li>The General Grant Tree</li>
     <li>Hume Lake</li>
     <li>John Muir Trail</li>
-    <li>Roaring River Falls</li>
+    <li class="lastinlist">Roaring River Falls</li>
 </ul>
 
 
@@ -83,7 +83,7 @@
     <li>The General Sherman Tree</li>
     <li>Fern Canyon</li>
     <li>Coastal Drive</li>
-    <li>Battery Point Lighthouse</li>
+    <li class="lastinlist">Battery Point Lighthouse</li>
 
 </ul>
 <button type="button" class="yellow-highlight">Highlight!</button>
@@ -113,7 +113,7 @@
 
 
     $(".yellow-highlight").click(function() {
-        $('ul').children.last().css('background-color', '#FF0');
+        $(".lastinlist").css('background-color', '#FF0');
         });
 
 
