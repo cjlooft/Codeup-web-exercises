@@ -22,8 +22,14 @@
 
 </head>
 <body>
+<div>
+    <h1> Would you like to sign-up for our newsletter?
+    <span> <button type="button" class="The-x">X</button></span></h1>
+
+</div>
 
 
+<h2 class="Registration">Please register for this site.</h2>
 
 <img src="Image/General-Sherman-Tree .jpg" width="400"/>
 <h1> 10 facts about Sequoia National Park</h1>
@@ -57,8 +63,8 @@
 <button type="button" class="show-me">Show me!</button>
 
 <hr>
-<h3>Yosemite National Park</h3>
-<ul class="Parks">
+<h3 class="Yosemite">Yosemite National Park</h3>
+<ul class="Parks1">
     <li>Pacific Crest Trail</li>
     <li>El Capitan</li>
     <li>Half Dome</li>
@@ -68,8 +74,8 @@
 </ul>
 
 
-<h3> Kings Canyon National Park</h3>
-<ul class="Parks">
+<h3 class="Kings"> Kings Canyon National Park</h3>
+<ul class="Parks2">
 
     <li>The General Grant Tree</li>
     <li>Hume Lake</li>
@@ -78,8 +84,8 @@
 </ul>
 
 
-<h3>Redwood National Park </h3>
-<ul class="Parks">
+<h3 class="Redwood">Redwood National Park </h3>
+<ul class="Parks3">
     <li>The General Sherman Tree</li>
     <li>Fern Canyon</li>
     <li>Coastal Drive</li>
@@ -135,6 +141,36 @@
     $('li').click(function() {
         $(this).parent().children().first().css('color' , "#006BFF");
     });
+
+
+
+    $("span").click(function() {
+     $("div"). hide();
+    });
+
+
+    $("ul").toggle();
+
+    $('.Registration').hide(0);
+    setTimeout(function(){
+        $('.Registration').hide(0).delay(8000).fadeIn(1000);
+    });
+
+    $(".Yosemite").click(function() {
+        $(".Parks1").slideDown();
+    });
+
+     $(".Kings").click(function() {
+         $(".Parks2").slideDown();
+     });
+
+    $(".Redwood").click(function() {
+        $(".Parks3").slideDown();
+    });
+
+
+
+
 
 
 
