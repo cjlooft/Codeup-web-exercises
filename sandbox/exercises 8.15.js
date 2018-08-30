@@ -35,6 +35,7 @@ function fizzBuzz(number) {
         }
     }
 }
+
 fizzBuzz(50);
 
 // new array bugs
@@ -43,14 +44,13 @@ fizzBuzz(50);
 var bugs = ["roach", "dragonfly", "spider", "mosquito", "ladybug", "earthworm", "wasp"];
 
 
-
-
-bugs; unshift();  //adds to the front
-bugs.shift( );  //takes off the first item
+bugs;
+unshift();  //adds to the front
+bugs.shift();  //takes off the first item
 
 
 bugs.push("ant"); //adds
-bugs.pop( ); //takses aways from the end
+bugs.pop(); //takses aways from the end
 
 
 bugs[3];  //this will return "spider
@@ -58,22 +58,19 @@ bugs[3];  //this will return "spider
 
 bugs.indexof("roach");
 
-    bugs.lastindexof("roach");
+bugs.lastindexof("roach");
 
-    bugs.sort();
+bugs.sort();
 
-    bugs.reverse();
+bugs.reverse();
 
 
 bugs.indexOf("mosquito");
 
-    bugs.slice(3,4);
-   // will take out spider
+bugs.slice(3, 4);
+// will take out spider
 
- var quickBrownFox = [ "The" , "quick", "brown", "fox", "jumped" , "over" , "the" , "lazy" , "dog" ];
-
-
-
+var quickBrownFox = ["The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog"];
 
 
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
@@ -83,8 +80,7 @@ var energy = fruits.join(" and ");
 
 var str = "How are you doing today?";
 str.split(" ", 3);
-(3) ["How", "are", "you"];
-
+(3) ["How", "are", "you"];
 
 
 var planets = [
@@ -98,12 +94,13 @@ var planets = [
     'Neptune'
 ];
 
-    planets.unshift("The Sun");
+planets.unshift("The Sun");
 
-    planets.push("Pluto");
+planets.push("Pluto");
 
-    planets.shift("The Sun");
+planets.shift("The Sun");
 
-    planets.pop("Pluto");
+planets.pop("Pluto");
+
 
 
