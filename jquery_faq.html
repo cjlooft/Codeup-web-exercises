@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
+
     <title>Sequoia National Park</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
 
 
     <style>
@@ -42,7 +48,7 @@
         }
 
         body {
-            background-color: #afd1da;
+            background-color: #60C0FD;
         }
 
 
@@ -59,7 +65,7 @@
     <h1> Would you like to sign-up for our newsletter?
         <span> <button type="button" class="The-x">X</button></span></h1>
 
-    <audio id="">
+    <audio id="Mission">
         <source src="image/" type="audio/mp3">
     </audio>
 </div>
@@ -71,9 +77,12 @@
         <button type="button" class="btn btn-warning btn-sm">No, thank you.</button>
     </h2>
 </section>
+<body>
 
 
-<img src="Image/General-Sherman-Tree .jpg" width="1000"/>
+<div>
+
+    <img src="Image/General-Sherman-Tree .jpg" width="1000"/>
 <h1> 10 facts about Sequoia National Park</h1>
 <dl>
     <dt>Established date:</dt>
@@ -129,8 +138,7 @@
     <li class="lastinlist">Roaring River Falls</li>
 </ul>
 
-
-<h3 class="Redwood">Redwood National Park </h3>
+<h3 class="Redwood">Redwood National Park</h3>
 <ul class="Parks3">
     <li>The General Sherman Tree</li>
     <li>Fern Canyon</li>
@@ -140,12 +148,37 @@
 </ul>
 <button type="button" class="yellow-highlight">Highlight!</button>
 
+    <div id="map" style="width: 50; height: 300px; background: grey" />
 
-<script src="js/jquery-2.2.4.js"></script>
+<script src="js/jquery-2.2.4/js"></script>
 
-<script>
 
-    "use strict";
+
+ <script>
+
+
+        function moveMap(map){
+            map.setCenter({lat: 36.4864, lng: -118.5658});
+            map.setZoom(5);
+        }
+
+
+    function addMarkersToMap(map) {
+        var GeneralSherman = new H.map.Marker({lat: 36.5819, lng: -118.7511});
+        map.addObject(GeneralSherman);
+    }
+
+        var platform = new H.service.Platform({
+            'app_id': '{pTcXKkSyjNgsukuqLrOM} ',
+            'app_code': '{IiHIoG8SqQEeaglje9xt8w} '
+        });
+
+    var pixelRatio = window.devicePixelRatio || 1;
+    var defaultLayers = platform.createDefaultLayers({
+        tileSize: pixelRatio === 1 ? 256 : 512,
+        ppi: pixelRatio === 1 ? undefined : 320
+    });
+
 
 
     $("dd").click(function (event) {
