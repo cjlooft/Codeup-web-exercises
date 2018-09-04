@@ -63,11 +63,28 @@ $.getJSON("http://api.openweathermap.org/data/2.5/forecast", {
 });
 
 
-// $.getJSON(https://tile.openweathermap.org/map/{layer}/{z}/{x}/{y}.png?appid={"29a78bdd314f87e8cfe1faa62ca1cf45"});
-//
-//     lat: 29.4230,
-//     lon: -98.48527,
-//
-//
-// }).done(function (data) {
-//     console.log(data);
+
+
+
+var platform = new H.service.Platform({
+    'app_id': 'TRYFrlLo3uBFcsuwEIxr ',
+    'app_code': 'AHk71sd9d0xnOXc6XbwfPA',
+    useHTTPS: true
+});
+var pixelRatio = window.devicePixelRatio || 1;
+
+var defaultLayers = platform.createDefaultLayers({
+    tileSize: pixelRatio === 1 ? 256 : 512,
+    ppi: pixelRatio === 1 ? undefined : 320
+});
+
+var map = new H.Map(document.getElementById('map-output'),
+    defaultLayers.normal.map, {pixelRatio: pixelRatio});
+    map.zoom(10);
+
+
+
+
+
+
+

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather API</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
@@ -11,6 +13,14 @@
 <style>
     body {
         background: #a1dbff;
+    }
+
+    #map-output {
+        height: 500px;
+        width: 800px;
+        margin: black solid 2em;
+        padding: 2em;
+
     }
 </style>
 </head>
@@ -67,7 +77,30 @@
         </div>
     </div>
 
+
+    <div>
+
+        <div id="map-output"></div>
+
+    </div>
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
     <script src="js/weather-api.js"></script>
+
+<script>
+
+        function moveMap(map){
+        map.setCenter({lat: 29.4230, lng: -98.48527});
+        map.setZoom(10);
+        }
+
+        moveMap(map);
+
+
+</script>
 </body>
 
 </html>
