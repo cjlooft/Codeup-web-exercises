@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+<body class="outside-border bg-success text-white">
+
+<h1>My blog</h1>
+
+<div class="container bg-warning text-dark border border-dark">
+    <div class="row">
+        <div class="col">
+            <div id="posts"></div>
+
+        </div>
+        <div class="col" id="shed"">
+
+        <img src="Image/treehouse plans.jpeg" height="225" width="224"/>
+        <img src="Image/treehouse2.jpeg" width="215"  class="border border-dark m-2"/>
+
+
+        <hr>
+
+        <div> <img src="Image/treehouse3.jpeg"  width="250" class="border border-dark m-2"/></div>
+</div>
+
+
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<script>
+    (function() {
+        "use strict";
+        var postsDiv = $('#posts');
+        function getPosts(){
+            $.get('data/blog.json', function(posts){
+                posts.forEach(function(post){
+                    addPost(post);
+                });
+                postsDiv.fadeIn();
+            });
+        }
+        function addPost(item){
+            var html = '<div>';
+            html += '<h1>'+ item.title +'</h1>';
+            html += '<p>'+ item.content +'</p>';
+            html += '<h3>'+ item.categories.join(' | ') +'</h3>';
+            html += '<i>'+ item.date +'</i>';
+            html += '</div>';
+            postsDiv.append(html);
+        }
+        getPosts();
+    })();
+</script>
+
+</body>
+</html>
