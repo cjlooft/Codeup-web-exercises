@@ -7,53 +7,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+
 
 
     <style>
         .invisible {
             display: none;
         }
-
         .highlighted {
             background-color: yellow;
-
         }
-
-
-         dl {
+        dl {
             font-size: 30px;
             padding: .5px;
-
         }
-
         li  {
             font-size: 30px;
             padding: .5px;
-
         }
-
         h3  {
             font-size: 36px;
             padding: .5px;
-
         }
-
         img {
             border: black solid 2em;
         }
-
         body {
             background-color: #60C0FD;
         }
-
-
     </style>
-    <script src="js/jquery-2.2.4.js"></script>
+
 
 
 </head>
@@ -61,7 +44,7 @@
 
 
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger" id="news" role="alert">
     <h1> Would you like to sign-up for our newsletter?
         <span> <button type="button" class="The-x">X</button></span></h1>
 
@@ -77,175 +60,129 @@
         <button type="button" class="btn btn-warning btn-sm">No, thank you.</button>
     </h2>
 </section>
-<body>
 
 
-<div>
+<section id="page">
 
     <img src="Image/General-Sherman-Tree .jpg" width="1000"/>
-<h1> 10 facts about Sequoia National Park</h1>
-<dl>
-    <dt>Established date:</dt>
-    <dd>It was established on September 25, 1890</dd>
+    <h1> 10 facts about Sequoia National Park</h1>
+    <dl>
+        <dt>Established date:</dt>
+        <dd>It was established on September 25, 1890</dd>
 
-    <dt>Location</dt>
-    <dd>It is located in the Sierra Nevada, a mountain range located between the Central Valley of California and
-        the Great Basin.
-    </dd>
-    <dd>The park is south of and contiguous with Kings Canyon National Park</dd>
-    <dt>Area/Size</dt>
-    <dd>The park spans 404,064 acres</dd>
-    <dt>Famous attractions</dt>
+        <dt>Location</dt>
+        <dd>It is located in the Sierra Nevada, a mountain range located between the Central Valley of California and
+            the Great Basin.
+        </dd>
+        <dd>The park is south of and contiguous with Kings Canyon National Park</dd>
+        <dt>Area/Size</dt>
+        <dd>The park spans 404,064 acres</dd>
+        <dt>Famous attractions</dt>
 
-    <dd>The park is famous for its giant sequoia trees and features the <strong>General Sherman tree</strong> , the
-        largest tree on Earth.
-    </dd>
-    <dd>Located in the center of the park is Moro Rock which is a granite dome <br>
-        <img src="Image/Moro Rock.jpg" width="1000">
-    </dd>
-    <dd>Animals that inhabit this park include coyote, badger, black bear, bighorn sheep, deer, fox,
-        cougar, beaver, muskrat, and wolverine.
-    </dd>
+        <dd>The park is famous for its giant sequoia trees and features the <strong>General Sherman tree</strong> , the
+            largest tree on Earth.
+        </dd>
+        <dd>Located in the center of the park is Moro Rock which is a granite dome <br>
+            <img src="Image/Moro Rock.jpg" width="1000">
+        </dd>
+        <dd>Animals that inhabit this park include coyote, badger, black bear, bighorn sheep, deer, fox,
+            cougar, beaver, muskrat, and wolverine.
+        </dd>
 
-    <dt>Visitiors can engage in various activities including hiking, camping, fishing, and backpacking</dt>
-
-
-    <dt>Click <a href=" https://www.nps.gov/seki/index.htm "><strong>here</strong></a> to go to the official website of
-        the Sequoria National Park
-    </dt>
-</dl>
-
-<button type="button" class="show-me">Show me!</button>
-
-<hr>
-<h3 class="Yosemite">Yosemite National Park</h3>
-<ul class="Parks1">
-    <li>Pacific Crest Trail</li>
-    <li>El Capitan</li>
-    <li>Half Dome</li>
-    <li>Mariposa Grove</li>
-    <li class="lastinlist">Tuolumne Meadows</li>
-
-</ul>
+        <dt>Visitiors can engage in various activities including hiking, camping, fishing, and backpacking</dt>
 
 
-<h3 class="Kings"> Kings Canyon National Park</h3>
-<ul class="Parks2">
+        <dt>Click <a href=" https://www.nps.gov/seki/index.htm "><strong>here</strong></a> to go to the official website of
+            the Sequoria National Park
+        </dt>
+    </dl>
 
-    <li>The General Grant Tree</li>
-    <li>Hume Lake</li>
-    <li>John Muir Trail</li>
-    <li class="lastinlist">Roaring River Falls</li>
-</ul>
+    <button type="button" class="show-me">Show me!</button>
 
-<h3 class="Redwood">Redwood National Park</h3>
-<ul class="Parks3">
-    <li>The General Sherman Tree</li>
-    <li>Fern Canyon</li>
-    <li>Coastal Drive</li>
-    <li class="lastinlist">Battery Point Lighthouse</li>
+    <hr>
+    <h3 class="Yosemite">Yosemite National Park</h3>
+    <ul class="Parks1">
+        <li>Pacific Crest Trail</li>
+        <li>El Capitan</li>
+        <li>Half Dome</li>
+        <li>Mariposa Grove</li>
+        <li class="lastinlist">Tuolumne Meadows</li>
 
-</ul>
-<button type="button" class="yellow-highlight">Highlight!</button>
+    </ul>
 
-    <div id="map" style="width: 50; height: 300px; background: grey" />
 
-<script src="js/jquery-2.2.4/js"></script>
+    <h3 class="Kings"> Kings Canyon National Park</h3>
+    <ul class="Parks2">
+
+        <li>The General Grant Tree</li>
+        <li>Hume Lake</li>
+        <li>John Muir Trail</li>
+        <li class="lastinlist">Roaring River Falls</li>
+    </ul>
+
+    <h3 class="Redwood">Redwood National Park</h3>
+    <ul class="Parks3">
+        <li>The General Sherman Tree</li>
+        <li>Fern Canyon</li>
+        <li>Coastal Drive</li>
+        <li class="lastinlist">Battery Point Lighthouse</li>
+
+    </ul>
+    <button type="button" class="yellow-highlight">Highlight!</button>
+</section>
 
 
 
- <script>
+    <script src="js/jquery-2.2.4.js"></script>
 
 
-        function moveMap(map){
-            map.setCenter({lat: 36.4864, lng: -118.5658});
-            map.setZoom(5);
-        }
+    <script>
 
-
-    function addMarkersToMap(map) {
-        var GeneralSherman = new H.map.Marker({lat: 36.5819, lng: -118.7511});
-        map.addObject(GeneralSherman);
-    }
-
-        var platform = new H.service.Platform({
-            'app_id': '{pTcXKkSyjNgsukuqLrOM} ',
-            'app_code': '{IiHIoG8SqQEeaglje9xt8w} '
+        $("dd").click(function (event) {
+            event.preventDefault();
+            $(this).toggleClass("invisible");
+        });
+        $("dt").click(function () {
+            $(this).toggleClass("highlighted");
+        });
+        $(".show-me").click(function () {
+            $('dd').removeClass("invisible");
+        });
+        // $(".yellow-highlight").click(function() {
+        //   $(".lastinlist").css('background-color', '#FF0');
+        //   });
+        $(".yellow-highlight").click(function (event) {
+            $("ul").each(function () {
+                $(this).children().last().toggleClass("highlighted");
+            });
+        });
+        $('h3').click(function () {
+            $(this).next().css('font-weight', 'bold');
+        });
+        $('li').click(function () {
+            $(this).parent().children().first().css('color', "#006BFF");
+        });
+        $("span").click(function () {
+            $("div").hide();
+            var audio = new Audio('image/20 The Mission (From _The Mission_).m4a');
+            audio.play();
+        });
+        $("ul").toggle();
+        $('.Registration').hide(0);
+        setTimeout(function(){
+            $('.Registration').hide(0).delay(8000).fadeIn(1000);
+        });
+        $(".Yosemite").click(function () {
+            $(".Parks1").slideDown();
+        });
+        $(".Kings").click(function () {
+            $(".Parks2").slideDown();
+        });
+        $(".Redwood").click(function () {
+            $(".Parks3").slideDown();
         });
 
-    var pixelRatio = window.devicePixelRatio || 1;
-    var defaultLayers = platform.createDefaultLayers({
-        tileSize: pixelRatio === 1 ? 256 : 512,
-        ppi: pixelRatio === 1 ? undefined : 320
-    });
-
-
-
-    $("dd").click(function (event) {
-        event.preventDefault();
-        $(this).toggleClass("invisible");
-    });
-
-    $("dt").click(function () {
-        $(this).toggleClass("highlighted");
-    });
-
-
-    $(".show-me").click(function () {
-        $('dd').removeClass("invisible");
-    });
-
-
-    // $(".yellow-highlight").click(function() {
-    //   $(".lastinlist").css('background-color', '#FF0');
-    //   });
-
-
-    $(".yellow-highlight").click(function (event) {
-        $("ul").each(function () {
-            $(this).children().last().toggleClass("highlighted");
-        });
-    });
-
-
-    $('h3').click(function () {
-        $(this).next().css('font-weight', 'bold');
-    });
-
-
-    $('li').click(function () {
-        $(this).parent().children().first().css('color', "#006BFF");
-    });
-
-
-    $("span").click(function () {
-        $("div").hide();
-        var audio = new Audio('image/20 The Mission (From _The Mission_).m4a');
-        audio.play();
-
-    });
-
-
-    $("ul").toggle();
-
-    $('.Registration').hide(0);
-    setTimeout(function(){
-        $('.Registration').hide(0).delay(8000).fadeIn(1000);
-    });
-
-    $(".Yosemite").click(function () {
-        $(".Parks1").slideDown();
-    });
-
-    $(".Kings").click(function () {
-        $(".Parks2").slideDown();
-    });
-
-    $(".Redwood").click(function () {
-        $(".Parks3").slideDown();
-    });
-
-</script>
+    </script>
 
 
 </body>
