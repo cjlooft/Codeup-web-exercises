@@ -79,10 +79,10 @@ users.reduce((longest, user) => {
 // Use reduce to get the list of user's names in a single string.' +
 // ' Example: Your instructors are: ryan, luis, zach, fernando, justin.
 
-let newObjects = users.reduce( (accumulation, currentObject) => {
-    accumulation[curObj.name] = curObj;
-    return accumulation;
-}, {});
+users.reduce( (message, user, i ) => {
+    if (i< users.length-1)
+    return `${message} ${user.name},`
+    else return `${message}  and ${user.name}.`
+}, "Your instructors are:  "))
 
-console.log(newObjects);
 
