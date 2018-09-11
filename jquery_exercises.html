@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Exercise</title>
+    <style>
+        body {background-color: antiquewhite;}
+        h1   {color: blue;}
+        p    {color: red;}
+
+        .sub-paragraph { padding: 6px; border: 6px solid black}
+
+    </style>
+
+</head>
+
+<body>
+
+<h1 >
+
+<h1 id="main-header">Howdy Y'all!</h1>
+
+<h2 id="sub-header">What would you like to drink?</h2>
+<ul>
+    <li class="codeup" id="water"> water </li>
+    <li class="codeup"  id="sweet tea"> sweet tea </li>
+    <li class="codeup" id="lemonade"> lemonade</li>
+
+</ul>
+
+<p class="sub-paragraph">
+ It is always nice to sit back in a comfortable chair, under a shade tree and enjoy cool drink in the afternoon.
+
+    <blockquote>Just breathe. </blockquote>
+
+</p>
+
+
+<input id="name" type="password">
+<button id="btn-input">Place your order</button>
+
+
+    <script src="js/jquery-2.2.4.js"></script>
+
+<script>
+       "use strict";
+
+
+    $(document).ready(function() {
+        confirm( 'Just breathe...' );
+    });
+
+       $("p").css("background-color", "yellow");
+       $(".codeup").css("border" , "1px solid red");
+</script>
+
+
+</body>
+</html>
