@@ -1,49 +1,17 @@
 
 
 
-function wait (num) {
-    return new Promise((resolve, reject) => {
+let  wait =NumberofMilliseconds =>
+{
+    return new Promise((resolve) => {
         setTimeout(() => {
-    }
-        for (var num = 1; num <= 1000; num++) {
-            num * 1000
-        }
-        if (num >= 1000) {
-            resolve("You\'ll see this after " + num  + " seconds");
-
-    });
-    };
-
-    wait(3).then(() => console.log("You\\\'ll see this after " + num  + " seconds"))
-
-;
-let hgAccessToken=localStorage.getItem('githubAccessToken");')
-function lastUserCommit(username = "carmen_looft") {
-let url = (fetch('https://api.github.com/users/${username}/events', {Headers: (`Authorization!; 'token ${ghAccessToakae}'}})
-.then(response => (response.json())
-.then(data =>.json`
+            resolve()
+        }, NumberofMilliseconds)
+    })
 }
 
-    const request = fetch(' https://github.com/cjlooft/Codeup-web-exercises', {
-        headers: {'Authorization': 'token YOUR_TOKEN_HERE'} // 14e44fa186f8d85e5265983e38f5e0bca34f5b65
-    });
-    request
-        .then(response => response.json())
-        .then(webExercises => console.log([0].created_at))
-    ;
-
-    request.catch(error => console.log(error));
+wait(1000).then(() => console.log('You\'ll see this after 1 second'));
+wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
+/
 //
-//     });
-// };
-
 //
-   
-    //
-    //
-    // fetch(url, {headers: {'Authorization': 'token YOUR_TOKEN_HERE'}})
-    fetch('https://api.github.com/users')
-        .then(response => console.log(response))
-        .catch(error => console.error(error));
-
-
